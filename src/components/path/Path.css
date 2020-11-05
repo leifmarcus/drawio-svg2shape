@@ -1,0 +1,9 @@
+.Path {}
+
+.Path__input {
+    width: 100%;
+}
+
+.Path__field {
+    margin: 2rem 0;
+}

@@ -1,0 +1,13 @@
+.Box {
+    margin-top: 4rem;
+}
+
+.Box:first-child {
+    margin-top: 0;
+}
+
+.Box__title {
+    font-weight: 300;
+    letter-spacing: 0.1ex;
+    margin-top: 0;
+}

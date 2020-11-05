@@ -1,0 +1,9 @@
+.Polygon {}
+
+.Polygon__input {
+    width: 100%;
+}
+
+.Polygon__field {
+    margin: 2rem 0;
+}
