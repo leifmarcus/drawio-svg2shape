@@ -1,6 +1,6 @@
 import React, { ChangeEventHandler, useState } from 'react';
+import { convertPath, Coords, Point, SVGPathPointsTypes } from './converter';
 import './Path.css';
-import { convertPath, SVGPathPointsTypes, Coords, Point } from './converter';
 
 type TransformFunctions = {
     [key in SVGPathPointsTypes]?: any;
@@ -42,7 +42,7 @@ const usePathInput = (): [string, Array<Point>, ChangeEventHandler<HTMLInputElem
     return [path, converted, handleChange];
 };
 
-export const Path: React.FunctionComponent<{}> = () => {
+export const Path = () => {
     const [path, converted, handleChange] = usePathInput();
 
     return (

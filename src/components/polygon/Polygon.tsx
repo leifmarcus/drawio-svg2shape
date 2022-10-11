@@ -1,6 +1,6 @@
 import React, { ChangeEventHandler, useState } from 'react';
-import './Polygon.css';
 import { convertPolygon } from './converter';
+import './Polygon.css';
 
 const DEFAULT_POLYGON = '10,10 10,20 15,15';
 
@@ -17,7 +17,7 @@ const usePolygonInput = (): [string, Array<Array<number>>, ChangeEventHandler<HT
     return [polygon, converted, handleChange];
 };
 
-export const Polygon: React.FunctionComponent<{}> = () => {
+export const Polygon = () => {
     const [polygon, converted, handleChange] = usePolygonInput();
 
     return (
